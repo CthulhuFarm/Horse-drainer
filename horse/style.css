@@ -1,0 +1,2155 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+:host, :root, [data-theme] {
+    --chakra-ring-inset: var(--chakra-empty, );
+    --chakra-ring-offset-width: 0px;
+    --chakra-ring-offset-color: #fff;
+    --chakra-ring-color: rgba(66, 153, 225, 0.6);
+    --chakra-ring-offset-shadow: 0 0 #0000;
+    --chakra-ring-shadow: 0 0 #0000;
+    --chakra-space-x-reverse: 0;
+    --chakra-space-y-reverse: 0;
+    --chakra-colors-transparent: transparent;
+    --chakra-colors-current: currentColor;
+    --chakra-colors-black-100: #000;
+    --chakra-colors-black-200: #171A1C;
+    --chakra-colors-white-400: #E4E4E4;
+    --chakra-colors-white-500: #f0f8ffa3;
+    --chakra-colors-white-700: #F0F8FF;
+    --chakra-colors-white-decorative: rgba(240, 248, 255, 0.12);
+    --chakra-colors-white-default: #fff;
+    --chakra-colors-white-help: rgba(240, 248, 255, 0.32);
+    --chakra-colors-white-secondary: rgba(240, 248, 255, 0.64);
+    --chakra-colors-white-slight: rgba(240, 248, 255, 0.04);
+    --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+    --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+    --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+    --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+    --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+    --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+    --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+    --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+    --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.8);
+    --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+    --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+    --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+    --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+    --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+    --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+    --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+    --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+    --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+    --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.8);
+    --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+    --chakra-colors-gray-50: #F7FAFC;
+    --chakra-colors-gray-100: #EDF2F7;
+    --chakra-colors-gray-200: #E2E8F0;
+    --chakra-colors-gray-300: #57606C;
+    --chakra-colors-gray-400: #3b3f46;
+    --chakra-colors-gray-500: #636464;
+    --chakra-colors-gray-600: #4A5568;
+    --chakra-colors-gray-700: #858F98;
+    --chakra-colors-gray-800: #2A2E35;
+    --chakra-colors-gray-900: #292829;
+    --chakra-colors-gray-1000: #373A42;
+    --chakra-colors-gray-1100: #22262D;
+    --chakra-colors-gray-1200: #2a2e35;
+    --chakra-colors-gray-1300: #18191C;
+    --chakra-colors-gray-1400: #1F2127;
+    --chakra-colors-red-50: #FFF5F5;
+    --chakra-colors-red-100: #FED7D7;
+    --chakra-colors-red-200: #FEB2B2;
+    --chakra-colors-red-300: #F7BFC5;
+    --chakra-colors-red-400: #F56565;
+    --chakra-colors-red-500: #E53E3E;
+    --chakra-colors-red-600: #C53030;
+    --chakra-colors-red-700: #9B2C2C;
+    --chakra-colors-red-800: #822727;
+    --chakra-colors-red-900: #63171B;
+    --chakra-colors-orange-50: #FFFAF0;
+    --chakra-colors-orange-100: #FEEBC8;
+    --chakra-colors-orange-200: #FBD38D;
+    --chakra-colors-orange-300: #FFD4AE;
+    --chakra-colors-orange-400: #ED8936;
+    --chakra-colors-orange-500: #DD6B20;
+    --chakra-colors-orange-600: #C05621;
+    --chakra-colors-orange-700: #9C4221;
+    --chakra-colors-orange-800: #7B341E;
+    --chakra-colors-orange-900: #652B19;
+    --chakra-colors-yellow-50: #FFFFF0;
+    --chakra-colors-yellow-100: #FEFCBF;
+    --chakra-colors-yellow-200: #FAF089;
+    --chakra-colors-yellow-300: #F6E05E;
+    --chakra-colors-yellow-400: #FFE925;
+    --chakra-colors-yellow-500: #FEE912;
+    --chakra-colors-yellow-600: #B7791F;
+    --chakra-colors-yellow-700: #975A16;
+    --chakra-colors-yellow-800: #744210;
+    --chakra-colors-yellow-900: #5F370E;
+    --chakra-colors-green-50: #F0FFF4;
+    --chakra-colors-green-100: #C6F6D5;
+    --chakra-colors-green-200: #9AE6B4;
+    --chakra-colors-green-300: #326373;
+    --chakra-colors-green-400: #375B55;
+    --chakra-colors-green-500: #317d6c;
+    --chakra-colors-green-600: #2F855A;
+    --chakra-colors-green-700: #27b18a;
+    --chakra-colors-green-800: #22543D;
+    --chakra-colors-green-900: #75E1C2;
+    --chakra-colors-green-1000: #4DB379;
+    --chakra-colors-green-glow: #9cb99c;
+    --chakra-colors-green-badge: #0C6451;
+    --chakra-colors-teal-50: #E6FFFA;
+    --chakra-colors-teal-100: #B2F5EA;
+    --chakra-colors-teal-200: #81E6D9;
+    --chakra-colors-teal-300: #4FD1C5;
+    --chakra-colors-teal-400: #38B2AC;
+    --chakra-colors-teal-500: #319795;
+    --chakra-colors-teal-600: #2C7A7B;
+    --chakra-colors-teal-700: #285E61;
+    --chakra-colors-teal-800: #234E52;
+    --chakra-colors-teal-900: #1D4044;
+    --chakra-colors-blue-50: #ebf8ff;
+    --chakra-colors-blue-100: #B3DDFF;
+    --chakra-colors-blue-200: #90cdf4;
+    --chakra-colors-blue-300: #63b3ed;
+    --chakra-colors-blue-400: #4299e1;
+    --chakra-colors-blue-500: #3182ce;
+    --chakra-colors-blue-600: #2b6cb0;
+    --chakra-colors-blue-700: #2c5282;
+    --chakra-colors-blue-800: #2a4365;
+    --chakra-colors-blue-900: #1A365D;
+    --chakra-colors-cyan-50: #EDFDFD;
+    --chakra-colors-cyan-100: #C4F1F9;
+    --chakra-colors-cyan-200: #9DECF9;
+    --chakra-colors-cyan-300: #76E4F7;
+    --chakra-colors-cyan-400: #0BC5EA;
+    --chakra-colors-cyan-500: #00B5D8;
+    --chakra-colors-cyan-600: #00A3C4;
+    --chakra-colors-cyan-700: #0987A0;
+    --chakra-colors-cyan-800: #086F83;
+    --chakra-colors-cyan-900: #065666;
+    --chakra-colors-purple-50: #FAF5FF;
+    --chakra-colors-purple-100: #E9D8FD;
+    --chakra-colors-purple-200: #D6BCFA;
+    --chakra-colors-purple-300: #CDB3FF;
+    --chakra-colors-purple-400: #9F7AEA;
+    --chakra-colors-purple-500: #563D6D;
+    --chakra-colors-purple-600: #6B46C1;
+    --chakra-colors-purple-700: #5E3846;
+    --chakra-colors-purple-800: #44337A;
+    --chakra-colors-purple-900: #322659;
+    --chakra-colors-purple-polygon: #8247E5;
+    --chakra-colors-pink-50: #FFF5F7;
+    --chakra-colors-pink-100: #FED7E2;
+    --chakra-colors-pink-200: #FBB6CE;
+    --chakra-colors-pink-300: #F687B3;
+    --chakra-colors-pink-400: #ED64A6;
+    --chakra-colors-pink-500: #D53F8C;
+    --chakra-colors-pink-600: #B83280;
+    --chakra-colors-pink-700: #97266D;
+    --chakra-colors-pink-800: #702459;
+    --chakra-colors-pink-900: #521B41;
+    --chakra-colors-linkedin-50: #E8F4F9;
+    --chakra-colors-linkedin-100: #CFEDFB;
+    --chakra-colors-linkedin-200: #9BDAF3;
+    --chakra-colors-linkedin-300: #68C7EC;
+    --chakra-colors-linkedin-400: #34B3E4;
+    --chakra-colors-linkedin-500: #00A0DC;
+    --chakra-colors-linkedin-600: #008CC9;
+    --chakra-colors-linkedin-700: #0077B5;
+    --chakra-colors-linkedin-800: #005E93;
+    --chakra-colors-linkedin-900: #004471;
+    --chakra-colors-facebook-50: #E8F4F9;
+    --chakra-colors-facebook-100: #D9DEE9;
+    --chakra-colors-facebook-200: #B7C2DA;
+    --chakra-colors-facebook-300: #6482C0;
+    --chakra-colors-facebook-400: #4267B2;
+    --chakra-colors-facebook-500: #385898;
+    --chakra-colors-facebook-600: #314E89;
+    --chakra-colors-facebook-700: #29487D;
+    --chakra-colors-facebook-800: #223B67;
+    --chakra-colors-facebook-900: #1E355B;
+    --chakra-colors-messenger-50: #D0E6FF;
+    --chakra-colors-messenger-100: #B9DAFF;
+    --chakra-colors-messenger-200: #A2CDFF;
+    --chakra-colors-messenger-300: #7AB8FF;
+    --chakra-colors-messenger-400: #2E90FF;
+    --chakra-colors-messenger-500: #0078FF;
+    --chakra-colors-messenger-600: #0063D1;
+    --chakra-colors-messenger-700: #0052AC;
+    --chakra-colors-messenger-800: #003C7E;
+    --chakra-colors-messenger-900: #002C5C;
+    --chakra-colors-whatsapp-50: #dffeec;
+    --chakra-colors-whatsapp-100: #b9f5d0;
+    --chakra-colors-whatsapp-200: #90edb3;
+    --chakra-colors-whatsapp-300: #65e495;
+    --chakra-colors-whatsapp-400: #3cdd78;
+    --chakra-colors-whatsapp-500: #22c35e;
+    --chakra-colors-whatsapp-600: #179848;
+    --chakra-colors-whatsapp-700: #0c6c33;
+    --chakra-colors-whatsapp-800: #01421c;
+    --chakra-colors-whatsapp-900: #001803;
+    --chakra-colors-twitter-50: #E5F4FD;
+    --chakra-colors-twitter-100: #C8E9FB;
+    --chakra-colors-twitter-200: #A8DCFA;
+    --chakra-colors-twitter-300: #83CDF7;
+    --chakra-colors-twitter-400: #57BBF5;
+    --chakra-colors-twitter-500: #1DA1F2;
+    --chakra-colors-twitter-600: #1A94DA;
+    --chakra-colors-twitter-700: #1681BF;
+    --chakra-colors-twitter-800: #136B9E;
+    --chakra-colors-twitter-900: #0D4D71;
+    --chakra-colors-telegram-50: #E3F2F9;
+    --chakra-colors-telegram-100: #C5E4F3;
+    --chakra-colors-telegram-200: #A2D4EC;
+    --chakra-colors-telegram-300: #7AC1E4;
+    --chakra-colors-telegram-400: #47A9DA;
+    --chakra-colors-telegram-500: #0088CC;
+    --chakra-colors-telegram-600: #007AB8;
+    --chakra-colors-telegram-700: #006BA1;
+    --chakra-colors-telegram-800: #005885;
+    --chakra-colors-telegram-900: #003F5E;
+    --chakra-colors-brown-500: #66513E;
+    --chakra-colors-indigo-600: #4E47CC;
+    --chakra-colors-lightBlue-glow: #c9e9ff;
+    --chakra-colors-toastFills-success: #294c48;
+    --chakra-colors-toastFills-warning: #5E4B26;
+    --chakra-colors-toastFills-error: #562B35;
+    --chakra-colors-toastBorders-success: #29A784;
+    --chakra-colors-toastBorders-warning: #FEA700;
+    --chakra-colors-toastBorders-error: #E22636;
+    --chakra-colors-gradients-success: rgba(39, 177, 138, 0.28);
+    --chakra-colors-gradients-warning: rgba(255, 167, 0, 0.28);
+    --chakra-colors-gradients-error: rgba(227, 38, 54, 0.28);
+    --chakra-colors-gradients-rainbow: linear-gradient(267.46deg, #563D6D 0%, #66513E 52.11%, #326373 100%);
+    --chakra-colors-gradients-green: linear-gradient(135deg, #3D675D 0%, #395052 100%);
+    --chakra-colors-gradients-blueGreen: linear-gradient(90deg, #5871B0 0%, #6CA3A4 100%);
+    --chakra-colors-gradients-greenZed: linear-gradient(90deg, #27B18A 0%, #317D6C 100%);
+    --chakra-colors-gradients-greenDark: linear-gradient(0deg, #397953, #397953),#4DB379;
+    --chakra-colors-gradients-greenEmerald: linear-gradient(90deg, #3D675D 0%, #395052 100%);
+    --chakra-colors-gradients-gold: radial-gradient(45.02% 45.31% at 30.47% 14.84%, rgba(255, 255, 255, 0.256) 0%, rgba(255, 255, 255, 0) 100%),radial-gradient(100% 100% at 100% 100%, #946B2F 0%, #887952 100%);
+    --chakra-colors-gradients-black: linear-gradient(90deg, #2A2E35 0%, #2B3037 6.25%, #41464D 100%);
+    --chakra-colors-gradients-orange: linear-gradient(90deg, #B7AB7C 0%, #BD5A22 100%);
+    --chakra-colors-gradients-purple: linear-gradient(90deg, #383082 0%, #7F4089 100%);
+    --chakra-colors-gradients-purpleDark: linear-gradient(180deg, #2B2942 0%, #23262C 100%);
+    --chakra-colors-gradients-red: linear-gradient(90deg, #96464D 0%, #7D1A28 100%);
+    --chakra-colors-gradients-yellow: linear-gradient(270.03deg, rgba(42, 46, 53, 0) 0.03%, rgba(255, 167, 0, 0.28) 100.67%),#292D34;
+    --chakra-colors-badges-needs-upgrade-background: linear-gradient(90deg, #b7ab7c 0%, #bd5a22 100%);
+    --chakra-colors-badges-needs-upgrade-color: #ffd4ae;
+    --chakra-colors-badges-in-race-background: linear-gradient(90deg, #96464d 0%, #7d1a28 100%);
+    --chakra-colors-badges-in-race-color: #f7bfc5;
+    --chakra-colors-badges-in-stud-background: linear-gradient(315deg, #383082 0%, #7f4089 100%);
+    --chakra-colors-badges-in-stud-color: #cdb3ff;
+    --chakra-colors-badges-upgrading-background: linear-gradient(90deg, #3d675d 0%, #395052 100%);
+    --chakra-colors-badges-upgrading-color: #27b18a;
+    --chakra-colors-badges-on-sale-background: linear-gradient(135deg, #3d675d 0%, #395052 100%);
+    --chakra-colors-badges-on-sale-color: #27b18a;
+    --chakra-colors-badges-race-ready-background: linear-gradient(315deg, #b7ab7c 0%, #bd5a22 100%);
+    --chakra-colors-badges-race-ready-color: #ffd4ae;
+    --chakra-colors-badges-prepared-background: linear-gradient(135deg, #2a2e35 0%, #41464d 100%);
+    --chakra-colors-badges-prepared-color: white;
+    --chakra-colors-badges-trial-background: linear-gradient(135deg, #3d675d 0%, #395052 100%);
+    --chakra-colors-badges-trial-color: #27b18a;
+    --chakra-colors-badges-trial-expired-background: linear-gradient(90deg, #2a2e35 0%, #2b3037 6.25%, #41464d 100%);
+    --chakra-colors-badges-trial-expired-color: rgba(240, 248, 255, 0.64);
+    --chakra-borders-none: 0;
+    --chakra-borders-1px: 1px solid;
+    --chakra-borders-2px: 2px solid;
+    --chakra-borders-4px: 4px solid;
+    --chakra-borders-8px: 8px solid;
+    --chakra-fonts-heading: Georgia,serif;
+    --chakra-fonts-body: system-ui,sans-serif;
+    --chakra-fonts-mono: Menlo,monospace;
+    --chakra-fontSizes-xs: 1.2rem;
+    --chakra-fontSizes-sm: 1.4rem;
+    --chakra-fontSizes-md: 1.6rem;
+    --chakra-fontSizes-lg: 1.8rem;
+    --chakra-fontSizes-xl: 2rem;
+    --chakra-fontSizes-2xl: 2.4rem;
+    --chakra-fontSizes-3xl: 3rem;
+    --chakra-fontSizes-4xl: 3.6rem;
+    --chakra-fontSizes-5xl: 4.8rem;
+    --chakra-fontSizes-6xl: 6rem;
+    --chakra-fontSizes-7xl: 7.2rem;
+    --chakra-fontSizes-8xl: 9.6rem;
+    --chakra-fontSizes-9xl: 12.8rem;
+    --chakra-fontSizes-2xs: 1rem;
+    --chakra-fontWeights-hairline: 100;
+    --chakra-fontWeights-thin: 200;
+    --chakra-fontWeights-light: 300;
+    --chakra-fontWeights-normal: 400;
+    --chakra-fontWeights-medium: 500;
+    --chakra-fontWeights-semibold: 600;
+    --chakra-fontWeights-bold: 700;
+    --chakra-fontWeights-extrabold: 800;
+    --chakra-fontWeights-black: 900;
+    --chakra-letterSpacings-tighter: -0.05em;
+    --chakra-letterSpacings-tight: -0.025em;
+    --chakra-letterSpacings-normal: 0;
+    --chakra-letterSpacings-wide: 0.025em;
+    --chakra-letterSpacings-wider: 0.05em;
+    --chakra-letterSpacings-widest: 0.1em;
+    --chakra-lineHeights-3: 1.2rem;
+    --chakra-lineHeights-4: 1.6rem;
+    --chakra-lineHeights-5: 2rem;
+    --chakra-lineHeights-6: 2.4rem;
+    --chakra-lineHeights-7: 2.8rem;
+    --chakra-lineHeights-8: 3.2rem;
+    --chakra-lineHeights-9: 3.6rem;
+    --chakra-lineHeights-10: 4rem;
+    --chakra-lineHeights-normal: normal;
+    --chakra-lineHeights-none: 1;
+    --chakra-lineHeights-shorter: 1.25;
+    --chakra-lineHeights-short: 1.375;
+    --chakra-lineHeights-base: 1.5;
+    --chakra-lineHeights-tall: 1.625;
+    --chakra-lineHeights-taller: 2;
+    --chakra-radii-0: 0;
+    --chakra-radii-none: 0;
+    --chakra-radii-sm: 0.2rem;
+    --chakra-radii-base: 0.4rem;
+    --chakra-radii-md: 0.6rem;
+    --chakra-radii-lg: 0.8rem;
+    --chakra-radii-xl: 1.2rem;
+    --chakra-radii-2xl: 1.6rem;
+    --chakra-radii-3xl: 2.4rem;
+    --chakra-radii-full: 9999px;
+    --chakra-space-1: 0.4rem;
+    --chakra-space-2: 0.8rem;
+    --chakra-space-3: 1.2rem;
+    --chakra-space-4: 1.6rem;
+    --chakra-space-5: 2rem;
+    --chakra-space-6: 2.4rem;
+    --chakra-space-7: 2.8rem;
+    --chakra-space-8: 3.2rem;
+    --chakra-space-9: 3.6rem;
+    --chakra-space-10: 4rem;
+    --chakra-space-12: 4.8rem;
+    --chakra-space-14: 5.6rem;
+    --chakra-space-16: 6.4rem;
+    --chakra-space-20: 8rem;
+    --chakra-space-24: 9.6rem;
+    --chakra-space-28: 11.2rem;
+    --chakra-space-32: 12.8rem;
+    --chakra-space-36: 14.4rem;
+    --chakra-space-40: 16rem;
+    --chakra-space-44: 17.6rem;
+    --chakra-space-48: 19.2rem;
+    --chakra-space-52: 20.8rem;
+    --chakra-space-56: 22.4rem;
+    --chakra-space-60: 24rem;
+    --chakra-space-64: 25.6rem;
+    --chakra-space-72: 28.8rem;
+    --chakra-space-80: 32rem;
+    --chakra-space-96: 38.4rem;
+    --chakra-space-px: 1px;
+    --chakra-space-0-5: 0.2rem;
+    --chakra-space-1-5: 0.6rem;
+    --chakra-space-2-5: 1rem;
+    --chakra-space-3-5: 1.4rem;
+    --chakra-space-4-5: 1.8rem;
+    --chakra-space-5-5: 2.2rem;
+    --chakra-space-6-5: 2.6rem;
+    --chakra-space-7-5: 3rem;
+    --chakra-shadows-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    --chakra-shadows-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --chakra-shadows-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --chakra-shadows-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
+    --chakra-shadows-inner: inset 0 2px 4px 0 rgba(0,0,0,0.06);
+    --chakra-shadows-none: none;
+    --chakra-shadows-dark-lg: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,rgba(0, 0, 0, 0.2) 0px 5px 10px,rgba(0, 0, 0, 0.4) 0px 15px 40px;
+    --chakra-sizes-1: 0.4rem;
+    --chakra-sizes-2: 0.8rem;
+    --chakra-sizes-3: 1.2rem;
+    --chakra-sizes-4: 1.6rem;
+    --chakra-sizes-5: 2rem;
+    --chakra-sizes-6: 2.4rem;
+    --chakra-sizes-7: 2.8rem;
+    --chakra-sizes-8: 3.2rem;
+    --chakra-sizes-9: 3.6rem;
+    --chakra-sizes-10: 4rem;
+    --chakra-sizes-12: 4.8rem;
+    --chakra-sizes-14: 5.6rem;
+    --chakra-sizes-16: 6.4rem;
+    --chakra-sizes-20: 8rem;
+    --chakra-sizes-24: 9.6rem;
+    --chakra-sizes-28: 11.2rem;
+    --chakra-sizes-32: 12.8rem;
+    --chakra-sizes-36: 14.4rem;
+    --chakra-sizes-40: 16rem;
+    --chakra-sizes-44: 17.6rem;
+    --chakra-sizes-48: 19.2rem;
+    --chakra-sizes-52: 20.8rem;
+    --chakra-sizes-56: 22.4rem;
+    --chakra-sizes-60: 24rem;
+    --chakra-sizes-64: 25.6rem;
+    --chakra-sizes-72: 28.8rem;
+    --chakra-sizes-80: 32rem;
+    --chakra-sizes-96: 38.4rem;
+    --chakra-sizes-px: 1px;
+    --chakra-sizes-0-5: 0.2rem;
+    --chakra-sizes-1-5: 0.6rem;
+    --chakra-sizes-2-5: 1rem;
+    --chakra-sizes-3-5: 1.4rem;
+    --chakra-sizes-max: max-content;
+    --chakra-sizes-min: min-content;
+    --chakra-sizes-full: 100%;
+    --chakra-sizes-3xs: 22.4rem;
+    --chakra-sizes-2xs: 25.6rem;
+    --chakra-sizes-xs: 32rem;
+    --chakra-sizes-sm: 38.4rem;
+    --chakra-sizes-md: 44.8rem;
+    --chakra-sizes-lg: 51.2rem;
+    --chakra-sizes-xl: 57.6rem;
+    --chakra-sizes-2xl: 67.2rem;
+    --chakra-sizes-3xl: 76.8rem;
+    --chakra-sizes-4xl: 89.6rem;
+    --chakra-sizes-5xl: 102.4rem;
+    --chakra-sizes-6xl: 115.2rem;
+    --chakra-sizes-7xl: 128rem;
+    --chakra-sizes-8xl: 144rem;
+    --chakra-sizes-container-sm: 640px;
+    --chakra-sizes-container-md: 768px;
+    --chakra-sizes-container-lg: 1024px;
+    --chakra-sizes-container-xl: 1280px;
+    --chakra-sizes-4-5: 1.8rem;
+    --chakra-sizes-5-5: 2.2rem;
+    --chakra-sizes-6-5: 2.6rem;
+    --chakra-sizes-7-5: 3rem;
+    --chakra-zIndices-hide: -1;
+    --chakra-zIndices-auto: auto;
+    --chakra-zIndices-base: 0;
+    --chakra-zIndices-docked: 10;
+    --chakra-zIndices-dropdown: 1000;
+    --chakra-zIndices-sticky: 1100;
+    --chakra-zIndices-banner: 1200;
+    --chakra-zIndices-overlay: 1300;
+    --chakra-zIndices-modal: 1400;
+    --chakra-zIndices-popover: 1500;
+    --chakra-zIndices-skipLink: 1600;
+    --chakra-zIndices-toast: 1700;
+    --chakra-zIndices-tooltip: 1800;
+    --chakra-transition-property-common: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+    --chakra-transition-property-colors: background-color,border-color,color,fill,stroke;
+    --chakra-transition-property-dimensions: width,height;
+    --chakra-transition-property-position: left,right,top,bottom;
+    --chakra-transition-property-background: background-color,background-image,background-position;
+    --chakra-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --chakra-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --chakra-transition-duration-ultra-fast: 50ms;
+    --chakra-transition-duration-faster: 100ms;
+    --chakra-transition-duration-fast: 150ms;
+    --chakra-transition-duration-normal: 200ms;
+    --chakra-transition-duration-slow: 300ms;
+    --chakra-transition-duration-slower: 400ms;
+    --chakra-transition-duration-ultra-slow: 500ms;
+    --chakra-blur-none: 0;
+    --chakra-blur-sm: 4px;
+    --chakra-blur-base: 8px;
+    --chakra-blur-md: 12px;
+    --chakra-blur-lg: 16px;
+    --chakra-blur-xl: 24px;
+    --chakra-blur-2xl: 40px;
+    --chakra-blur-3xl: 64px;
+}
+
+body {
+    background-color: #fff;
+    color: #212529;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+body {
+    background-color: #22262d;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+body {
+    transition-property: background-color;
+    transition-duration: var(--chakra-transition-duration-normal);
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.app-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+.header {
+    background: url('./img/download1.svg') no-repeat 50%;
+    background-size: cover;
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1% 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+.header .header-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+}
+.header .header-content .left-part {
+    align-items: flex-end;
+    display: flex;
+}
+.header .header-content .logo-part {
+    margin-right: 9rem;
+}
+.header .header-content .logo-part .logo-img {
+    width: 90%;
+}
+.header .header-content .right-part {
+    align-items: center;
+    display: flex;
+    width: 30%;
+}
+.header .header-content .right-part .primary-text.helpful {
+    color: rgba(240,248,255,.32);
+    font-size: 55%;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+.header .header-content .right-part .start-part {
+    padding-left: 1.6rem;
+    width:55%;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 50%;
+    line-height: inherit;
+    margin: 0;
+}
+.primary-btn.signup {
+    background: linear-gradient(90deg,#27b18a,#317d6c);
+    border-radius: 1.2rem;
+    box-shadow: 0 0 8px 0 rgb(39 177 138 / 37%);
+    color: #f0f8ff;
+    cursor: pointer;
+    font-size: 50%;
+    font-weight: 600;
+    letter-spacing: 1.03px;
+    line-height: 1.9rem;
+    padding: 2.25rem 3.2rem;
+    text-align: center;
+    transition: all .3s ease-out;
+    border-color: transparent;
+}
+
+.primary-btn.signup:hover {
+    background: linear-gradient(90deg,#3db9a3,#317d6c);
+   background-color: #3db9a3;
+}
+
+.primary-btn.outline {
+    background: transparent;
+    border: 1px solid #336f64 !important;
+    box-shadow: none;
+    color: #336f64;
+}
+
+.primary-btn.outline:hover {
+    color: #3db9a3;
+    border: 1px solid #3db9a3 !important;
+}
+
+.primary-btn.md {
+    border-radius: 0.8rem;
+    letter-spacing: .4px;
+    line-height: 1.6rem;
+    padding: 1.4rem 2.4rem;
+}
+.header .header-content .right-part .start-part .login, .header .header-content .right-part .start-part .signup {
+    height: 8%;
+    padding: 2%;
+    width: 46%;
+}
+.header .header-content .right-part .start-part .login {
+    border-width: 0.25rem;
+    margin-right: 0.5rem;
+}
+.wrapper-3hgZT {
+    color: #fff;
+    fill: #fff;
+    padding: 0.92857rem 1.57143rem;
+    border-radius: 999rem;
+    bottom: 0;
+    letter-spacing: 0.6;
+    font-size: 1.07143rem;
+}
+.u-borderNone {
+    border: none !important;
+}
+.u-textBold {
+    font-weight: 700;
+}
+.Arrange {
+    box-sizing: border-box;
+    display: table;
+    margin: 0;
+    min-width: 100%;
+    padding: 0;
+    table-layout: auto;
+}
+.u-textNoWrap {
+    white-space: nowrap !important;
+}
+.u-textLeft {
+    text-align: left !important;
+}
+.u-isActionable {
+    cursor: pointer !important;
+}
+.Arrange--middle .Arrange-sizeFill, .Arrange--middle .Arrange-sizeFit {
+    vertical-align: middle;
+}
+.Arrange--middle .Arrange-sizeFill, .Arrange--middle .Arrange-sizeFit {
+    vertical-align: middle;
+}
+.icon-3CF6U {
+    padding-right: 0.57143rem;
+}
+.u-userLauncherColor:not([disabled]) svg {
+    color: #133428;
+    fill: #133428;
+}
+.Icon-1QudM svg {
+    min-width: 1.42857rem;
+    min-height: 1.42857rem;
+    height: 1.42857rem;
+    width: 1.42857rem;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.u-textInheritColor {
+    color: inherit !important;
+}
+.u-inlineBlock {
+    display: inline-block !important;
+    max-width: 100%;
+}
+.Icon svg {
+    min-width: 1.42857rem;
+    min-height: 1.42857rem;
+    height: 1.42857rem;
+    width: 1.42857rem;
+}
+svg {
+    max-height: 100%;
+}
+.u-userLauncherColor:not([disabled]) svg path {
+    fill: #133428;
+}
+
+.u-userLauncherColor:not([disabled]) {
+    background-color: #25aa79 !important;
+    color: #133428 !important;
+    fill: #133428 !important;
+}
+.hyphen-balance-sidebar {
+    background-color: #1e2128;
+    height: calc(100vh - 84px);
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 9.5rem;
+    transition: width .5s ease-in-out;
+    width: 0;
+    z-index: 999;
+}
+.hyphen-balance-sidebar .sidebar-title {
+    align-items: center;
+    border-bottom: 1px solid rgba(240,248,255,.04);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+    width: 100%;
+}
+.hyphen-balance-sidebar .sidebar-title .left {
+    align-items: center;
+    display: flex;
+}
+.hyphen-balance-sidebar .sidebar-title .left img {
+    margin-right: 1.4rem;
+    opacity: .64;
+}
+.hyphen-balance-sidebar .sidebar-content>*, .hyphen-balance-sidebar .sidebar-title>*, .hyphen-balance-sidebar .weth-balance>* {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+.hyphen-balance-sidebar .weth-balance {
+    background: radial-gradient(100.28% 66.2% at 50% 100%,rgba(73,51,111,.74) 0,rgba(73,51,111,.2) 49.61%,rgba(73,51,111,.03) 100%),#2e2a35;
+}
+
+.hyphen-balance-sidebar .weth-balance .balance-zed-active {
+    min-height: 180px;
+}
+.loader-container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hyphen-balance-sidebar .weth-balance .actions {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2rem;
+}
+.hyphen-balance-sidebar .weth-balance .action {
+    margin: 1rem 2rem;
+    text-align: center;
+}
+.hyphen-balance-sidebar .weth-balance .topup-btn, .hyphen-balance-sidebar .weth-balance .transfer-btn {
+    align-items: center;
+    background: rgba(240,248,255,.12);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    justify-items: center;
+    margin: 1rem auto;
+    width: 40px;
+}
+.hyphen-balance-sidebar .weth-balance .topup-btn img, .hyphen-balance-sidebar .weth-balance .transfer-btn img {
+    opacity: .64;
+}
+.hyphen-balance-sidebar .weth-balance .action .primary-text {
+    font-size: 14px;
+}
+.hyphen-balance-sidebar .sidebar-content>div {
+    padding: 0 2rem;
+}
+.hyphen-balance-sidebar .sidebar-content .Collapsible__trigger {
+    padding: 2rem 0;
+}
+.Collapsible__trigger {
+    background: transparent;
+    color: rgba(240,248,255,.64);
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2.4rem;
+    padding: 1rem 0.5rem;
+    position: relative;
+    text-decoration: none;
+    transition: all .25s;
+}
+.icn-info {
+    opacity: .32;
+    width: 2rem;
+}
+.Collapsible__contentOuter {
+    transition: height .25s ease-in-out!important;
+}
+.hyphen-balance-sidebar .sidebar-content>div {
+    padding: 0 2rem;
+}
+.app-content .page-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.page-content.home main .get-started-bg {
+    background-image: linear-gradient(180deg,rgba(31,28,58,.9),rgba(31,28,58,.9) 10%,transparent 40%,rgba(34,38,45,.75) 70%,#22262d 90%),url(./img/horsebg.jpg);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105vh;
+    position: absolute;
+    top: -10rem;
+    width: 100%;
+    z-index: -1;
+}
+.page-content.home main .get-started-section {
+    height: auto;
+}
+.page-content.home main .get-started-section .get-started-content {
+    padding: 10rem 2rem;
+    text-align: center;
+}
+.page-content.home main .get-started-section .get-started-content .get-started-text {
+    color: #f0f8ff;
+    font-size: 400%;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+.page-content.home main .get-started-section .get-started-content .get-started-cta {
+    color: #f0f8ff;
+    font-size: 130%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.page-content.home main .get-started-section .get-started-content button {
+    font-size: 150%;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    padding: 1% 2%;
+}
+.page-content.home main section>div {
+    margin: 0 auto;
+    width:80%;
+}
+
+.page-content.home main .title img {
+    opacity: .34;
+    width: 2%;
+}
+
+.page-content.home main .section-content .streaming {
+    height: 65vh;
+    margin: 1rem 0 6rem;
+    width: 100%;
+}
+html[subframe] body {
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 75%;
+}
+html[subframe] #main-frame-error {
+    display: none;
+}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px){ #main-content {
+    margin: 0;
+    transition: opacity 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}}
+@media (min-width: 240px) and (max-width: 420px) and (min-height: 401px), (min-width: 421px) and (min-height: 240px) and (max-height: 560px)
+{#details, #main-content {
+    padding-bottom: 40px;
+}}
+
+@media (max-width: 640px), (max-height: 640px)
+{h1 {
+    margin: 0 0 15px;
+}}
+h1 span {
+    font-weight: 500;
+}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px)
+{h1 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}}
+@media (prefers-color-scheme: dark)
+{#error-information-button {
+    filter: invert(0.6);
+}}
+#error-information-button {
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTExIDE4aDJ2LTJoLTJ2MnptMS0xNkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6bTAtMTRjLTIuMjEgMC00IDEuNzktNCA0aDJjMC0xLjEuOS0yIDItMnMyIC45IDIgMmMwIDItMyAxLjc1LTMgNWgyYzAtMi4yNSAzLTIuNSAzLTUgMC0yLjIxLTEuNzktNC00LTR6Ii8+PC9zdmc+);
+    height: 24px;
+    vertical-align: -0.15em;
+    width: 24px;
+}
+#main-message > p {
+    display: inline;
+}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px)
+{.interstitial-wrapper p {
+    font-size: .95em;
+    line-height: 1.61em;
+    margin-top: 8px;
+}}
+[jscontent=hostName], [jscontent=failedUrl] {
+    overflow-wrap: break-word;
+}
+#suggestions-list p {
+    margin-block-end: 0;
+}
+#suggestions-list ul {
+    margin-top: 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+@media (prefers-color-scheme: dark)
+{#suggestions-list a {
+    color: var(--link-color);
+}}
+.error-code {
+    color: var(--error-code-color);
+    font-size: .8em;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+:not(.use-popup-container)#error-information-popup-container #error-information-popup-close {
+    display: none;
+}
+#error-information-popup-close {
+    margin-bottom: 0;
+    margin-inline-end: 35px;
+    margin-top: 15px;
+    text-align: end;
+}
+.link-button {
+    color: rgb(66, 133, 244);
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.hidden {
+    display: none;
+}
+#download-link, #download-link-clicked {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#download-link-clicked {
+    color: #BBB;
+}
+.hidden#save-page-for-later-button {
+    display: none;
+}
+.link-button {
+    color: rgb(66, 133, 244);
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#cancel-save-page-button {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48Y2xpcFBhdGggaWQ9Im1hc2siPjxwYXRoIGQ9Ik0xMiAyQzYuNSAyIDIgNi41IDIgMTJzNC41IDEwIDEwIDEwIDEwLTQuNSAxMC0xMFMxNy41IDIgMTIgMnptNSAxNkg3di0yaDEwdjJ6bS02LjctNEw3IDEwLjdsMS40LTEuNCAxLjkgMS45IDUuMy01LjNMMTcgNy4zIDEwLjMgMTR6IiBmaWxsPSIjOUFBMEE2Ii8+PC9jbGlwUGF0aD48cGF0aCBjbGlwLXBhdGg9InVybCgjbWFzaykiIGZpbGw9IiM5QUEwQTYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBjbGlwLXBhdGg9InVybCgjbWFzaykiIGZpbGw9IiMxQTczRTgiIHN0eWxlPSJhbmltYXRpb246b2ZmbGluZUFuaW1hdGlvbiA0cyBpbmZpbml0ZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxzdHlsZT5Aa2V5ZnJhbWVzIG9mZmxpbmVBbmltYXRpb257MCUsMzUle2hlaWdodDowfTYwJXtoZWlnaHQ6MTAwJX05MCV7ZmlsbC1vcGFjaXR5OjF9dG97ZmlsbC1vcGFjaXR5OjB9fTwvc3R5bGU+PC9zdmc+);
+    background-position: right 27px center;
+    background-repeat: no-repeat;
+    border: 1px solid var(--google-gray-300);
+    border-radius: 5px;
+    color: var(--google-gray-700);
+    margin-bottom: 26px;
+    padding-bottom: 16px;
+    padding-inline-end: 88px;
+    padding-inline-start: 16px;
+    padding-top: 16px;
+    text-align: start;
+}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px)
+{#offline-content-list {
+    margin-inline-start: -12px;
+    width: calc(100% + 24px);
+}}
+#offline-content-list.list-hidden #offline-content-list-visibility-card {
+    border-color: rgb(218, 220, 224);
+}
+#offline-content-list-visibility-card > div {
+    padding: 1em;
+}
+#offline-content-list-visibility-card {
+    border: 1px solid white;
+    border-radius: 8px;
+    display: flex;
+    font-size: .8em;
+    justify-content: space-between;
+    line-height: 1;
+}
+#offline-content-list-visibility-card > div {
+    padding: 1em;
+}
+#offline-content-list-show-text, #offline-content-list-hide-text {
+    color: rgb(66, 133, 244);
+}
+#offline-content-list.list-hidden #offline-content-list-hide-text, #offline-content-list:not(.list-hidden) #offline-content-list-show-text {
+    display: none;
+}
+#offline-content-list-show-text, #offline-content-list-hide-text {
+    color: rgb(66, 133, 244);
+}
+#offline-content-list.list-hidden #offline-content-suggestions {
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 200ms linear, visibility 0s 200ms, max-height 200ms 200ms ease-out;
+    visibility: hidden;
+}
+#offline-content-list.list-hidden #offline-content-list-action {
+    opacity: 0;
+    transition: opacity 200ms linear, visibility 0s 200ms;
+    visibility: hidden;
+}
+@media (min-width: 240px) and (max-width: 420px) and (min-height: 401px), (min-width: 421px) and (min-height: 240px) and (max-height: 560px)
+{body .nav-wrapper {
+    background: var(--background-color);
+    bottom: 0;
+    box-shadow: 0 -12px 24px var(--background-color);
+    left: 0;
+    margin: 0 auto;
+    max-width: 736px;
+    padding-inline-end: 24px;
+    padding-inline-start: 24px;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+}}
+@media (min-height: 299px)
+{.nav-wrapper {
+    padding-bottom: 16px;
+}}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px)
+{.nav-wrapper {
+    box-sizing: border-box;
+    padding-bottom: 8px;
+    width: 100%;
+}}
+.suggested-left > #control-buttons, .suggested-right > #details-button {
+    float: left;
+}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px)
+{.suggested-left > #control-buttons, .suggested-right > #control-buttons {
+    float: none;
+    margin: 0;
+}}
+.bad-clock button, .captive-portal button, .https-only button, .insecure-form button, .lookalike-url button, .main-frame-blocked button, .neterror button, .pdf button, .ssl button, .safe-browsing-billing button {
+    background: var(--primary-button-fill-color);
+}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px)
+{button, [dir='rtl'] button, button.small-link, .nav-wrapper .secondary-button {
+    font-family: Roboto-Regular,Helvetica;
+    margin: 6px 0;
+    transform: translatez(0);
+}}
+#download-button {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    position: relative;
+}
+.suggested-right > #control-buttons, .suggested-left > #details-button {
+    float: right;
+}
+#details-button {
+    box-shadow: none;
+    min-width: 0;
+}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px)
+{#details.hidden, #main-content.hidden {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    transition: none;
+}}
+@media (max-width: 420px) and (orientation: portrait), (max-height: 560px)
+{#details {
+    box-sizing: border-box;
+    height: auto;
+    margin: 0;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}}
+@media (min-width: 240px) and (max-width: 420px) and (min-height: 401px), (min-width: 421px) and (min-height: 240px) and (max-height: 560px)
+{#details {
+    padding-top: 5.5vh;
+}}
+@media (min-width: 240px) and (max-width: 420px) and (min-height: 401px), (min-width: 421px) and (min-height: 240px) and (max-height: 560px)
+{#details, #main-content {
+    padding-bottom: 40px;
+}}
+@media (max-width: 640px), (max-height: 640px)
+{.suggestions {
+    margin-top: 10px;
+}}
+@media (max-width: 640px), (max-height: 640px)
+{.suggestion-header {
+    margin-bottom: 0;
+}}
+.suggestion-body {
+    color: #777;
+}
+@media (max-width: 640px), (max-height: 640px)
+{.suggestions {
+    margin-top: 10px;
+}}
+@media (max-width: 640px), (max-height: 640px)
+{.suggestion-header {
+    margin-bottom: 0;
+}}
+#sub-frame-error {
+    -webkit-align-items: center;
+    -webkit-flex-flow: column;
+    -webkit-justify-content: center;
+    background-color: #DDD;
+    display: -webkit-flex;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+}
+#sub-frame-error .icon-generic {
+    margin: 0 0 16px;
+}
+#sub-frame-error-details {
+    margin: 0 10px;
+    text-align: center;
+    visibility: hidden;
+}
+#offline-resources {
+    display: none;
+}
+.page-content.home main .race-section {
+    background-color: #1e2128;
+    padding: 3.2rem 0;
+    width:100%;
+}
+
+.page-content.home main .race-section .next-to-run {
+    margin-bottom: 3.2rem;
+}
+
+.page-content.home main .race-section .next-to-run .title-left {
+    align-items: flex-end;
+    display: flex;
+}
+.page-content.home main .race-section .next-to-run>.title img, .page-content.home main .race-section .up-and-coming>.title img {
+    object-fit: contain;
+    opacity: .34;
+    width: 2.4rem;
+}
+
+.page-content.home main .race-section .next-to-run .title-right .see-all {
+    color: rgba(240,248,255,.64);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .06px;
+    line-height: 2.4rem;
+    text-decoration: none;
+}
+.page-content.home main .race-section .next-to-run>.races, .page-content.home main .race-section .up-and-coming>.races {
+    margin-top: 2rem;
+}
+.next-run-list {
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem 0 0;
+    width: 100%;
+}
+.next-run-list .race-tile.green-gradient-background {
+    background-image: linear-gradient(90deg,rgba(39,177,138,.24),rgba(42,46,53,.06));
+}
+.align-items-start {
+    -ms-flex-align: start!important;
+    align-items: flex-start!important;
+}
+.next-run-list .race-tile .race-name {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    /* margin-bottom: 0.8rem; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.next-run-list .race-tile .info {
+    display: flex;
+    justify-content: space-between;
+}
+.next-run-list .race-tile .info .price {
+    color: #27b18a;
+    font-style: italic;
+    font-weight: 700;
+}
+.next-run-list .race-tile .info .time {
+    font-style: italic;
+}
+.color-gold {
+    color: #fee912!important;
+}
+.next-run-list .race-tile .info .time .countdown {
+    color: #f0f8ff;
+    font-weight: 700;
+}
+.race-card__info:nth-child(2) {
+    background-image: linear-gradient(90deg,#2a2e35 0,rgba(42,46,53,.32)),url(./img/h2.png);
+}
+.next-run-list .race-tile {
+    background-color: #2a2e35;
+    background-image: linear-gradient(76deg,rgba(34,38,45,.97),rgba(34,38,45,.62));
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 12%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1%;
+    min-width: 18.5%;
+    padding: 1% 2%;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    width: 20%;
+}
+
+.next-run-list .race-tile:hover {
+    opacity: 0.7;
+}
+
+.primary-text {
+    color: #f0f8ff;
+    font-size: 90%;
+    font-weight: 500;
+    /* line-height: 2.4rem; */
+}
+.primary-text.bold{
+    font-family: Montserrat;
+    font-weight: 600;
+}
+.align-items-start {
+    -ms-flex-align: start!important;
+    align-items: flex-start!important;
+}
+.next-run-list .race-tile .info {
+    display: flex;
+    justify-content: space-between;
+}
+.next-run-list .race-tile .info .price {
+    color: #27b18a;
+    font-style: italic;
+    font-weight: 700;
+}
+.page-content.home main .price, .page-content.home main .stake {
+    color: #27b18a;
+    font-family: Montserrat;
+    font-size: 70%;
+    font-weight: 600;
+    letter-spacing: .33px;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+}
+.next-run-list .race-tile .info .time {
+    font-style: italic;
+}
+.race-card__info:nth-child(3) {
+    background-image: linear-gradient(90deg,#2a2e35 0,rgba(42,46,53,.32)),url(./img/h3.png);
+}
+.race-card__info .city {
+    margin-bottom: 0.8rem;
+}
+.bold, .page-content.leaderboard .page-top .categories-leaderboards-text, .page-content.tournaments .tournaments-list-grid-column-name, .page-content.tournaments .tournaments-list-grid-header-row-cell, .tournament-card-prize-pool-text {
+    font-weight: 700;
+}
+.h3-text.bold{
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-top: 0;
+}
+.h3-text, .page-content.leaderboard .page-top .heading-tournament-name-text, .page-content.tournaments .tournaments-list-header .heading-text {
+    color: #f0f8ff;
+    font-size: 110%;
+    letter-spacing: .1px;
+    /* line-height: 3.2rem; */
+}
+.align-items-start {
+    -ms-flex-align: start!important;
+    align-items: flex-start!important;
+}
+
+.page-content.home main .race-section .next-to-run, .page-content.home main .race-section .up-and-coming {
+    max-width: 100%;
+}
+.page-content.home main .race-section .next-to-run>.title, .page-content.home main .race-section .up-and-coming>.title {
+    align-items: center;
+    display: flex;
+}
+.page-content.home main .race-section .next-to-run .title {
+    justify-content: space-between;
+}
+.page-content.home main .race-section .next-to-run>.title img, .page-content.home main .race-section .up-and-coming>.title img {
+    object-fit: contain;
+    opacity: .34;
+    width: 2.4rem;
+}
+.page-content.home main .race-section .next-to-run>.title h3, .page-content.home main .race-section .up-and-coming>.title h3 {
+    color: rgba(240,248,255,.28);
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2.4rem;
+    margin-bottom: 0;
+    margin-left: 1.4rem;
+    text-transform: uppercase;
+}
+.page-content.home main .race-section .up-and-coming .races {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.page-content.home main .race-section .next-to-run>.races, .page-content.home main .race-section .up-and-coming>.races {
+    margin-top: 2rem;
+}
+.race-card__info:first-child {
+    background-image: linear-gradient(90deg,#2a2e35 0,rgba(42,46,53,.32)),url(./img/h1.png);
+}
+
+.race-card {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10%;
+    padding: 2%;
+    position: relative;
+    transition: all .3s ease-out;
+    width: 30%;
+}
+
+.race-card:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.overline-text {
+    color: rgba(240,248,255,.28);
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2.4rem;
+}
+.race-card__info .country {
+    letter-spacing: .06px;
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.overline-text.sm, .page-content.tournaments .tournaments-list-grid-column--prize-pool-usd {
+    color: rgba(240,248,255,.32);
+    font-size: 70%;
+}
+.overline-text.bold, .overline-text.tournament-card-prize-pool-text, .page-content.leaderboard .page-top .overline-text.categories-leaderboards-text, .page-content.tournaments .overline-text.tournaments-list-grid-column-name, .page-content.tournaments .overline-text.tournaments-list-grid-header-row-cell {
+    font-family: Montserrat;
+    font-weight: 600;
+}
+.next-run-list .race-tile .info .time {
+    font-style: italic;
+}
+.race-card__info .free-race-badge {
+    position: absolute;
+    right: 9%;
+    top: 15%;
+    width: 15%;
+}
+.race-card .race-right {
+    bottom: 10%;
+    position: absolute;
+    right: 10%;
+}
+.race-card__info .race-right .gates-left {
+    animation: appear .5s ease-out;
+    color: #f0f8ff;
+    font-size: 75%;
+    font-weight: 600;
+    letter-spacing: .07px;
+}
+.race-card__info .race-right .gates-left b {
+    color: #f0f8ff;
+    font-size: 185%;
+    font-weight: 500;
+    line-height: 2.6rem;
+    margin-right: 0.8rem;
+}
+.race-card__info .free-race-badge {
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    width: 6.3rem;
+}
+
+.race-card .race-right {
+    bottom: 3.2rem;
+    position: absolute;
+    right: 3.2rem;
+}
+
+.page-content.leaderboard .page-top .primary-btn.categories-leaderboards-text, .page-content.tournaments .primary-btn.tournaments-list-grid-column-name, .page-content.tournaments .primary-btn.tournaments-list-grid-header-row-cell, .primary-btn.bold, .primary-btn.tournament-card-prize-pool-text {
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.primary-btn.sm {
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .35px;
+    line-height: 1.4rem;
+    padding: 1.1rem 1.6rem;
+}
+
+.race-card__info .race-right .buy-in {
+    animation: appear .5s ease-out;
+    display: none;
+    height: 4.4rem;
+    text-decoration: none;
+    width: 13.6rem
+}
+
+.green, .page-content.leaderboard .page-top .header-prize-pool-text-green, .tournament-card-prize-pool-text-green {
+    color: #27b18a!important;
+}
+.outline-btn.green, .outline-btn.tournament-card-prize-pool-text-green, .page-content.leaderboard .page-top .outline-btn.header-prize-pool-text-green {
+    border: 2px solid #336f64;
+    color: #27b18a;
+}
+
+.outline-btn.green:hover {
+    border: 3px solid #388577 !important;
+    color: #2bca9d !important;
+}
+.outline-btn {
+    background: unset;
+    border: 2px solid rgba(240,248,255,.64);
+    border-radius: 1.6rem;
+    color: rgba(240,248,255,.64);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1.03px;
+    line-height: 1.9rem;
+    padding: 2.25rem 3.2rem;
+    text-align: center;
+    transition: all .3s ease-out;
+}
+
+.page-content.home main .actions a {
+    border-radius: 0.8rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 100%;
+    letter-spacing: .08px;
+    line-height: 2.4rem;
+    padding: 0.7% 2%;
+    text-decoration: none;
+}
+
+.page-content.home main .outline-btn {
+    font-weight: 500;
+}
+
+.css-356hzk {
+    box-shadow: var(--chakra-shadows-md);
+    border-radius: var(--chakra-radii-lg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline-start: var(--chakra-space-5);
+    margin-inline-end: var(--chakra-space-5);
+    background-image: url(./img/a0f39263dcfb5d0bd52a.jpg);
+    background-position: 50% -8.8rem;
+}
+@media screen and (min-width: 30em){
+    .css-356hzk {
+        margin-inline: 0px;
+    }
+}
+@media screen and (min-width: 48em){
+    .css-356hzk {
+        margin-inline: 0px;
+        background-image: url(./img/a0f39263dcfb5d0bd52a.jpg);
+        background-position: center center;
+    }
+}
+.css-gkru61 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: end;
+    border-radius: var(--chakra-radii-lg);
+    min-height: 416px;
+    margin-bottom: var(--chakra-space-16);
+    padding-inline-start: var(--chakra-space-10);
+    padding-inline-end: var(--chakra-space-10);
+    flex-direction: column;
+    background-image: linear-gradient(18deg, rgb(42, 46, 53) 43%, rgba(42, 46, 53, 0.32) 100%);
+}
+@media screen and (min-width: 30em){
+    .css-gkru61 {
+        -webkit-box-pack: end;
+        justify-content: end;
+        min-height: 416px;
+    }
+}
+@media screen and (min-width: 48em){
+    .css-gkru61 {
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        min-height: 155px;
+        flex-direction: row;
+        background-image: linear-gradient(36deg, rgb(42, 46, 53), rgba(42, 46, 53, 0.32));
+    }
+}
+.css-1su0r75 {
+    min-width: 100%;
+    padding-inline-start: var(--chakra-space-5);
+    padding-inline-end: var(--chakra-space-5);
+}
+@media screen and (min-width: 30em){
+    .css-1su0r75 {
+        padding-inline: 0px;
+    }
+}
+@media screen and (min-width: 48em){
+    .css-1su0r75 {
+        min-width: fit-content;
+        padding-inline: 0px;
+    }
+}
+h1, h2, h3, h4, h5 {
+    color: rgba(240,248,255,.28);
+    font-family: Montserrat;
+    font-weight: 700!important;
+}
+.css-1efy1dg {
+    font-family: Montserrat;
+    font-weight: var(--chakra-fontWeights-semibold);
+    font-size: var(--chakra-fontSizes-2xl);
+    line-height: 1.33;
+    color: white;
+    margin-bottom: var(--chakra-space-6-5);
+    margin-inline: 0px;
+}
+@media screen and (min-width: 30em){
+    .css-1efy1dg {
+        margin-bottom: var(--chakra-space-1-5);
+    }
+}
+@media screen and (min-width: 48em){
+    .css-1efy1dg {
+        line-height: 1.2;
+    }
+}
+.css-14xl9r9 {
+    margin-bottom: 0px;
+    font-size: var(--chakra-fontSizes-xs);
+    color: white;
+    opacity: 0.6;
+}
+.css-j511wc {
+    width: 100%;
+}
+a {
+    background-color: transparent;
+    color: #007bff;
+    text-decoration: none;
+}
+@media screen and (min-width: 48em){
+    .css-j511wc {
+        width: fit-content;
+        margin:5%;
+    }
+}
+.css-1bipqwz {
+    display: inline-flex;
+    appearance: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    width: 200%;
+    line-height: 1.2;
+    border-radius: var(--chakra-radii-lg);
+    font-weight: var(--chakra-fontWeights-semibold);
+    transition: all 0.3s ease-out 0s;
+    color: var(--chakra-colors-white-default);
+    height: var(--chakra-sizes-8);
+    min-width: 100%;
+    font-size: var(--chakra-fontSizes-xs);
+    letter-spacing: var(--chakra-letterSpacings-wide);
+    background-color: #27b18a;
+    box-shadow: rgb(39 177 138 / 37%) 0px 0px 8px 0px;
+    text-transform: uppercase;
+}
+   
+.css-1bipqwz:hover {
+    background-color: #28b85f;
+}
+@media screen and (min-width: 48em) {
+    .css-1bipqwz {
+        /* min-width: var(--chakra-sizes-36); */
+    }
+}
+.page-content.home main .horse-section .in-stud {
+    margin-top: 6.4rem;
+}
+
+.title {
+    display: flex !important;
+    align-items: center !important;
+}
+
+
+.page-content.home main .title h3 {
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 1.4rem;
+    font-size: 125%;
+    margin-top: 0;
+
+}
+
+.page-content.home main .horse-section .in-stud .horses {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem -1.2rem -0.8rem;
+}
+
+.page-content.home main .horse-section .in-stud .horses .horse {
+    align-items: center;
+    background-color: #2a2e35;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 12%);
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 16rem 1fr 10rem;
+    height: 5.6rem;
+    margin: 0.8rem 1.2rem;
+    overflow: hidden;
+    padding-left: 5rem;
+    padding-right: 0rem;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    width: 47.5%;
+}
+
+.page-content.home main .horse-section .in-stud .horses .horse:hover {
+    background-color: #40454d;
+}
+
+.horse-glow {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
+    visibility: hidden !important;
+}
+.horse-mask-portrait {
+    mask-image: url('./img/ho1-m.png');
+    -webkit-mask-image: url('./img/ho1-m.png');
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mix-blend-mode: overlay;
+    opacity: .8;
+    transform: translateZ(0);
+}
+.horse-mask-portrait, .horse-shadow {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+img, svg {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+}
+.horse-pose {
+    width: 100%!important;
+}
+
+.horse-mask, .horse-pose {
+    height: 100%;
+    position: absolute;
+}
+
+.page-content.home main .horse-section .in-stud .horses .horse .label-horse {
+    margin-left: 0;
+    position: absolute;
+}
+
+.page-content.home main .horse-section .in-stud .horses .horse .label-horse {
+    margin-left: 0;
+    position: absolute;
+}
+
+.horse-container {
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+.page-content.home main .horse-section .in-stud .horses .horse .name {
+    color: #f0f8ff;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.page-content.home main .horse-section .in-stud .horses .horse .group {
+    color: rgba(240,248,255,.32);
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.page-content.home main .horse-section .in-stud .horses .horse .price {
+    font-size: 1.3rem;
+    font-style: normal;
+}
+
+.page-content.home main .horse-section .in-stud .horses {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem -1.2rem -0.8rem;
+}
+
+.page-content.home main .actions {
+    margin-top: 3.2rem;
+    text-align: center;
+}
+
+.app-content .page-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.auth-modal .torus-intro, .footer {
+    text-align: center;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+.footer {
+    background-size: cover;
+    background: linear-gradient(180deg,rgba(24,25,28,0),#18191c);
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+}
+.app-footer {
+    background: #1d2026;
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+.footer-content {
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 5.4rem 0 5rem;
+    position: relative;
+    width: 80%;
+}
+.footer-content .count-part span {
+    align-items: center;
+    border: 2px solid rgba(240,248,255,.12);
+    border-radius: 50%;
+    color: rgba(240,248,255,.64);
+    display: flex;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 3.6rem;
+    justify-content: center;
+    line-height: 2.4rem;
+    padding-left: 0.4rem;
+    width: 3.6rem;
+}
+
+.footer-content .count-part {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.footer-content, .footer-content .nav-part {
+    align-items: center;
+    display: flex;
+}
+
+.footer-content .icons-part .icon-part .icon-sm .icon {
+    height: 1.1rem;
+    opacity: .64;
+    width: 1.1rem;
+}
+
+.footer-content .icons-part .icon-part {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    margin-right: 0.5rem;
+}
+.primary-text.helpful {
+    color: rgba(240,248,255,.32);
+}
+.symbol, symbol {
+    font-family: Helvetica;
+}
+.primary-text.secondary{
+    color: rgba(240,248,255,.64);
+}
+
+
+.footer-content .icons-part .icon-part:hover .icon-sm {
+    background: linear-gradient(135deg,#3d675d,#395052);
+}
+
+.primary-text.secondary:hover {
+    color: #fff;
+}
+.footer-content .nav-part a {
+    margin-left: 3.2rem;
+    text-decoration: none;
+}
+.footer-content .icons-part {
+    display: flex;
+}
+.footer-content .icons-part .icon-part .icon-sm {
+    background-color: rgba(240,248,255,.04);
+    border-radius: 50%;
+    height: 2.6rem;
+    margin-right: 0.6rem;
+    padding: 0.8rem;
+    width: 2.6rem;
+}
+.footer-content .icons-part .icon-part .icon-sm .icon-zed {
+    height: 0.9rem;
+    width: 0.9rem;
+}
+.scroll-to-top>div:hover {
+    filter: brightness(1.3);
+}
+.scroll-to-top>div {
+    align-items: center;
+    background-color: rgba(240,248,255,.32);
+    border-radius: 50%;
+    bottom: 8rem!important;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    width: 5rem;
+}
+.scroll-to-top>div img {
+    object-fit: contain;
+    width: 2rem;
+}
+
+@media screen and (max-width:425px) {
+    .header .header-content .logo-part {
+        margin-right: 0rem;
+    }
+
+    .header .header-content .right-part .primary-text.helpful {
+       display: none;
+    }
+
+    .header .header-content .right-part {
+        align-items: center;
+        display: flex;
+        width: 70%;
+    }
+
+    .header .header-content .right-part .start-part {
+        padding-left: 1.6rem;
+        width: 70%;
+    }
+
+    .page-content.home main .get-started-section .get-started-content .get-started-text {
+        font-size: 180%;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .page-content.home main .get-started-section .get-started-content .get-started-cta {
+        margin: 10px 10px;
+        padding: 0rem;
+    }
+
+    .page-content.home main .get-started-section .get-started-content button {
+        font-size: 150%;
+        letter-spacing: 1px;
+        margin-top: 2%;
+        padding: 2% 5%;
+    }
+
+    .page-content.home main .get-started-section .get-started-content {
+        padding: 5rem 0.5rem;
+        text-align: center;
+    }
+
+    .page-content.home main .race-section .next-to-run>.title h3, .page-content.home main .race-section .up-and-coming>.title h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0px;
+    }
+
+    .page-content.home main .race-section .next-to-run .title-right .see-all {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-right: 17px;
+    }
+
+    .next-run-list .race-tile {
+        min-width: 100%;
+        padding: 3% 5%;
+        margin-bottom: 15px;
+    }
+
+    .next-run-list {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page-content.home main .race-section .up-and-coming {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .page-content.home main .race-section .up-and-coming .races {
+        display: flex;
+        flex-direction: column;
+    }
+    .race-card {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 2% 5%;
+    }
+    .overline-text.sm, .page-content.tournaments .tournaments-list-grid-column--prize-pool-usd {
+        font-size: 100%;
+    }
+    .race-card__info .free-race-badge {
+        right: 8%;
+        top: 20%;
+        width: 3.5rem;
+    }
+    .race-card .race-right {
+        bottom: 5%;
+        right: 8%;
+    }
+    .race-card__info .race-right .gates-left b {
+        margin-right: 0rem;
+    }
+    .page-content.home main .actions {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .page-content.home main section>div {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .css-356hzk {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+    .css-gkru61 {
+        padding-inline-start:0;
+        padding-inline-end:0;
+    }
+    .css-1efy1dg {
+        text-align: center;
+    }
+    .css-14xl9r9 {
+        text-align: center;
+    }
+    .css-j511wc {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .css-1bipqwz {
+        min-width: 50%;
+        width: 50%;
+    }
+    .page-content.home main .horse-section .in-stud {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .page-content.home main .title img {
+        width: 25px;
+    }
+    .page-content.home main .horse-section .in-stud .horses {
+        margin: 0rem;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 15px 0;
+        height: 120px;
+    }
+    .horse-container {
+        width: 85px !important;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse .name {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse .group {
+        position: absolute;
+        right: 15px;
+        top: 45px;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse .price {
+        position: absolute;
+        right: 15px;
+        bottom: 8px;
+    }
+    .footer {
+        display: none;
+    }
+    .app-footer .footer-content .social-links {
+        display: flex;
+        margin: 0 auto;
+        width: 24rem;
+        padding: 0 75px;
+        flex-wrap: wrap;
+    }
+    .app-footer {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .footer-content, .footer-content .nav-part {
+        display: flex;
+        flex-direction: column;
+    }
+    .social-item {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    .number {
+        color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .primary-text.helpful {
+        line-height: 2.5rem;
+    }
+}
+@media screen and (max-width:375px) and (min-width:321px) {
+    .page-content.home main .horse-section .in-stud .horses .horse .name {
+        font-size: 1rem;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse .group {
+        font-size: 1rem;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse .price {
+        font-size: 1rem;
+    }
+    .app-footer .footer-content .social-links {
+        width: 20rem;
+        padding: 0 55px;
+    }
+}
+@media screen and (max-width:320px) {
+    .header .header-content .right-part {
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .header .header-content .right-part .start-part {
+        display: flex;
+        align-items: center;
+    }
+    .header .header-content .right-part .start-part .login, .header .header-content .right-part .start-part .signup {
+        width: 48%;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse .name {
+        font-size: 0.75rem;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse .group {
+        font-size: 0.75rem;
+    }
+    .page-content.home main .horse-section .in-stud .horses .horse .price {
+        font-size: 0.75rem;
+    }
+    .app-footer .footer-content .social-links {
+        width: 20rem;
+        padding: 0 40px;
+    }
+    .footer-content, .footer-content .nav-part {
+        padding-left: 5px;
+    }
+    .page-content.home main section>div {
+        padding-right: 0px;
+    }
+    .page-content.home main section>div {
+        padding-left: 0px;
+    }
+
+    .title {
+        margin-left: 20px;
+    }
+}
